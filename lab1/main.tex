@@ -1,0 +1,239 @@
+%----------------------------------------------------------------------------------------
+%	
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION DOCUMENTO
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{estructura.tex}
+
+%----------------------------------------------------------------------------------------
+%	INFORMACION
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Laboratorio 1: }Administrador de Procesos --- Parte A\@: Procesos y Comunicación Entre Procesos}
+
+\author{
+Facundo Nicolás Farias Lozano,
+Juan Cruz Paez,
+Tomás Agustín Muñoz
+}
+
+\date{\footnotesize\textsuperscript{\textbf{1}}Sistemas Operativos\\ \textsuperscript{\textbf{2}}Universidad Nacional de San Luis\\ \textsuperscript{\textbf{3}}2025}
+
+%\date{Universidad Nacional de San Luis --- 2025}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	RESOLUCIÓN
+%----------------------------------------------------------------------------------------
+
+\section*{Ejercicio 1:}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/ej1a.png}
+  \caption{System info}
+\end{figure}
+
+\subsection*{a- ¿Qué Sistema Operativo tiene instalado? ¿Qué distribución? ¿Qué versión?}
+El sistema operativo que tengo instalado es Linux Mint 22.1 Cinnamon y es la version 6.4.8
+
+\subsection*{b- ¿Cuántos procesadores posee su sistema de computadora? ¿Cuáles son sus características?}
+En mi computadora tengo instalado un AMD Ryzen 5 5600X y cuenta con 12 procesadores(Hilos log)
+
+\subsection*{c- ¿Cuál es la capacidad de memoria disponible?}
+
+La memoria disponible es de \(15.5 GiB\).
+
+\subsection*{d- ¿Qué placa de video o gráfica posee?}
+
+La placa de vídeo es la GeForce GTX 1650 del fabricante NVIDIA.
+
+\subsection*{e- ¿Cuál es la capacidad de disco que posee?}
+La capacidad de disco con la que cuenta la computadora es de 1007.7Gb
+
+%----------------------------------------------------------------------------------------
+
+\section*{Ejercicio 2:}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/2.png}
+  \caption{System monitor}
+\end{figure}
+
+\subsection*{a- ¿Qué información del sistema muestra?}
+
+Al abrir el \textit{monitor de sistema} podemos observar:
+
+\begin{itemize}
+    \item \textbf{Uso de la CPU: } Muestra un histograma del uso de los procesador en tiempo real.
+    \item \textbf{Uso de la memoria y espacio intercambiado (swap)\footnote{Herramienta de gestión de memoria que actua cuando la memoria RAM física se llena}: }
+    Muestra de forma gráfica el uso de la memoria RAM y el espacio de intercambio.
+    \item \textbf{Actividad de Red: } Muestra de manera gráfica la transmisión de  datos de red.
+\end{itemize}
+
+\subsection*{b- Mencione y describa qué información relevante sobre “Procesos” se puede mostrar (pestaña de “Procesos”).}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/ej2b2.png}
+  \caption{System monitor: Process}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{resources/ej2b.png}
+  \caption{System monitor: informacion de procesos}
+\end{figure}
+
+En dicha pestaña se muestra informacion en tiempo real de todos los procesos activos en el sistema. De ellos podemos ver:
+\begin{itemize}
+  \item \textbf{Nombre de Proceso: }Indica el programa que esta ejecutando
+  \item \textbf{Usuario:} Indica que usuario inicio el proceso.
+  \item \textbf{Uso de CPU:} Porcentaje del procesador que esta consumiendo el proceso
+  \item \textbf{Id:} Numero unico que identifica a cada proceso
+  \item \textbf{Memoria:} Cantidad de memoria RAM que esta consumiendo el proceso
+  \item \textbf{Lectura de disco:} Cantidad de informacion leida desde el disco por el proceso
+  \item \textbf{Escritura de disco:} Cantidad de informacion escrita en el disco por el proceso
+  \item \textbf{Prioridad:} Indica que priorida le da el sistema al proceso frente a otros.
+  \item \textbf{Estado:} Indica si el proceso esta durmiendo, ejecutandose,etc
+\end{itemize}
+  
+\subsection*{c- ¿Qué operaciones se permite hacer respecto a los procesos?}
+Las operaciones que se permiten hacer sobre un proceso son:
+\begin{itemize}
+  \item \textit{Open Files}
+  \item \textit{Change Priority}
+  \item \textit{Set Affinity}
+  \item \textit{Stop}
+  \item \textit{continue}
+  \item \textit{Terminate}
+  \item \textit{Memory Maps}
+  \item \textit{Kill}
+  \item \textit{End Procesos}
+  \item \textit{Show Process Properties}
+\end{itemize}
+
+\subsection*{d- ¿Cómo se muestran las prioridades de un proceso?}
+
+Las prioridades se muestran en una columna dedicada, donde cada proceso (fila) puede tomar los valores de: \textit{Very High}, \textit{High}, \textit{Normal}, 
+\textit{Low}, \textit{Very Low}, \textit{Custom}
+
+\subsection*{e- Inicializar las siguientes aplicaciones: un navegador Web, un procesador de texto y una
+terminal/consola, luego responda observando la pestaña “Procesos” del Monitor de sistema:}
+
+\begin{itemize}
+    \item i- ¿Cuál es el ID (o PID, identificador del proceso) de cada proceso?
+    \item ii- ¿En qué estado se encuentran cada uno de los procesos asociados a dichas aplicaciones?
+    \item iii- ¿Qué proceso está en estado de ejecución?
+    \item iv- Observar el tipo de cola (o Canal en espera) en la que puede estar un proceso según su
+        estado.
+    \item v- ¿Qué ocurre cuando se selecciona, para un proceso determinado, la opción de Detener,
+        Finalizar o Matar un proceso? (presione botón derecho sobre un proceso elegido)
+\end{itemize}
+
+\begin{itemize}
+  \item Brave web browser: Cuando se abre Brave muchos subprocesos de brave son abiertos (correspondiente a cada pestaña)
+  \begin{itemize}
+    \item ID 11249
+    \item Estado: Alternan entre los procesos como running y sleeping, por lo que se encuentran algunos procesos en ejecución.
+    \item Al detener el proceso se cierra completamente.
+    \item Al matar el proceso también se cierra.
+    \item El detener es similar.
+  \end{itemize}
+\end{itemize}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|c|}   
+    \hline
+      \textbf{Proceso} & \textbf{ID} & \textbf{Estado} & \textbf{Ejecución?} & \textbf{Detención} & \textbf{Finalizar} & \textbf{Matar} \\
+    \hline
+      \textbf{Brave web browser} & 11249 & Running & Si & 34 & d & d\\
+    \hline
+  \end{tabular}
+ \end{center}
+
+ % \begin{center}
+%     \begin{tabular}{|c|c|c|c|c|c|c|}   
+%     \hline
+%       \textbf{Proceso} & \textbf{ID} & \textbf{Estado} & \textbf{Ejecución?} & \textbf{Detención} & \textbf{Finalizar} & \textbf{Matar} \\
+%     \hline
+%       \textbf{Brave web browser} & 11249 & Running\footnote{En el momento de ejecutar Brave, se generan muchos procesos de Brave que intercalan entre running y sleeping} & Si & 34 & d & d\\
+
+\subsection*{f- Desde la pestaña “Procesos”, ordene los procesos por número de proceso, donde se muestren los
+siguientes datos (identificador del procesos, nombre del proceso, usuario, propietario, estado,
+prioridad, memoria real):}
+
+\begin{itemize}
+    \item i. Muestre la información de los 10 primeros procesos (con captura de pantalla).
+    \item ii. Complete la siguiente tabla de los procesos solicitados:
+\end{itemize}
+
+  Tabla de procesos de acuerdo al turnaround time
+  \begin{center}
+    \begin{tabular}{|c|c|c|c|c|}   
+    \hline
+      \textbf{Proceso} & \textbf{TT FIFO} & \textbf{TT SJF} & \textbf{TT Prio} & \textbf{TT RR} \\
+    \hline
+      \textbf{P1} & 10 & 34 & 22 & 34 \\
+    \hline
+  \end{tabular}
+ \end{center}
+%----------------------------------------------------------------------------------------
+
+\section*{Ejercicio 3: Inicie el simulador Planificador de Procesos:}
+
+\begin{itemize}
+    \item En el sistema operativo Linux, descomprimir y abrir la carpeta del simulador.
+    \item Una vez dentro de la carpeta del simulador “Planificador de Procesos”, abrir una “terminal o
+consola” e ingresar: java VentanaPrincipal2
+    \item Presione Enter para ejecutar el simulador.
+    \item Lea el Manual de Ayuda del simulador
+    \item Identifique los íconos del menú de herramientas, que representan las posibles operaciones del
+simulador.
+\end{itemize}
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}   
+    \hline
+      \textbf{Proceso} & \textbf{TT FIFO} & \textbf{TT SJF} & \textbf{TT Prio} & \textbf{TT RR} \\
+    \hline
+      \textbf{P1} & 10 & 34 & 22 & 34 \\
+    \hline
+  \end{tabular}
+ \end{center}
+
+
+\subsection*{a- ¿Qué partes del diagrama del ciclo de vida de un proceso se pueden visualizar en la ventana
+principal?}
+\subsection*{b- ¿Qué información de los procesos puede ser visualizada? Ejemplifique.}
+\subsection*{c- Respecto a la configuración de la simulación. ¿Qué información de los procesos se puede
+configurar?}
+\subsection*{d- ¿Qué información importante se puede observar una vez ejecutada la simulación?}
+%----------------------------------------------------------------------------------------
+
+\section*{Ejercicio 4: Inicialice la aplicación Terminal de Linux}
+
+
+\subsection*{a- Utilizando el comando ps listar los procesos del sistema.}
+\subsection*{b- Utilizando el comando ps con el parámetro -u listar los procesos del usuario actual únicamente.}
+\subsection*{c- Utilizando el comando top listar los procesos.}
+\subsection*{d- ¿Cuál es la diferencia de utilizar el comando top respecto de utilizar el comando ps?}
+\subsection*{e- Observe la estructura jerárquica de los procesos en Linux utilizando el comando pstree.}
+\subsection*{f- Ejecute el comando htop, luego visualice los estados de los procesos a través de la columna S (state).}
+\subsection*{g- Utilizando el comando kill listar las opciones de parámetros posibles utilizando el parámetro -l, luego
+investigue qué parámetros son necesarios para matar un proceso, muestre un ejemplo donde elige
+un proceso para matar y luego lo mata aplicando el comando con los parámetros correspondiente.}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
