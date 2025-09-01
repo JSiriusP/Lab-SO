@@ -225,14 +225,84 @@ configurar?}
 
 
 \subsection*{a- Utilizando el comando ps listar los procesos del sistema.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4a.png}
+  \caption{System monitor: Process}
+\end{figure}
 \subsection*{b- Utilizando el comando ps con el parámetro -u listar los procesos del usuario actual únicamente.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4b.png}
+  \caption{System monitor: Process}
+\end{figure}
 \subsection*{c- Utilizando el comando top listar los procesos.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4c.png}
+  \caption{System monitor: Process}
+\end{figure}
 \subsection*{d- ¿Cuál es la diferencia de utilizar el comando top respecto de utilizar el comando ps?}
+El comando "ps" muestra el estado de los procesos de un momento determinado, es estático, es decir que no se actualiza automaticamente.
+Por otra parte, el comando "top" muestra de manera interactiva y en tiempo real como cambia el estado de los procesos .
 \subsection*{e- Observe la estructura jerárquica de los procesos en Linux utilizando el comando pstree.}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4e.png}
+  \caption{System monitor: Process}
+\end{figure}
+Este comando muestra los procesos de manera que, indica cuales son "padres" y cuales "hijos".
+"Systemd" es el primer proceso que ejecuta linux y este va ser el padre de casi todos los demas.
+Podemos observar que algunos de sus hijos son "modem manager", "network manager", "accounts-daemon",etc
 \subsection*{f- Ejecute el comando htop, luego visualice los estados de los procesos a través de la columna S (state).}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4f.png}
+  \caption{System monitor: Process}
+\end{figure}
+La columna "S" que resulta del comando "htop" muestra el estado de un proceso.  
 \subsection*{g- Utilizando el comando kill listar las opciones de parámetros posibles utilizando el parámetro -l, luego
 investigue qué parámetros son necesarios para matar un proceso, muestre un ejemplo donde elige
 un proceso para matar y luego lo mata aplicando el comando con los parámetros correspondiente.}
+Listamos todas las señales posibles con el comando "kill -l"
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.85\textwidth]{resources/4g1.png}
+  \caption{System monitor: Process}
+\end{figure}
+Cada número o nombre representa una señal que podés enviar a un proceso.
+	Las más usadas para terminar procesos son:
+	SIGTERM (15) → finalizar de manera ordenada
+	SIGKILL (9) → matar forzadamente
+  Existen ciertas diferencias entre ellas: 
+    SIGTERM: Se le pide al proceso que termine dando la posibilidad de cerrar archivos, guardar datos,
+    liberar memoria y limpiar recursos antes de salir. El proceso podria ignorar la señal y no termina.
+    SIGKILL: Se le pide al proceso que termine de manera forzada u obligatoria y no le da posibilidad de cerrar archivos abiertos,
+    liberar recursos ni tampoco de guardar. El proceso no puede ignorar esta señal
+
+    Veamos un ejemplo de uso:
+    Listamos los procesos usando el comando "top"
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.85\textwidth]{resources/4g2.png}
+      \caption{System monitor: Process}
+    \end{figure}
+
+    Voy a matar el proceso Discord el cual tiene como PID 5365
+    Para finalizar amigablemente, usamos -SIGTERM ó -15 equivalentemente
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.85\textwidth]{resources/4g3.png}
+      \caption{System monitor: Process}
+    \end{figure}
+
+    Si no se cierra procedemos a usar -9 o -SIGKILL
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=0.85\textwidth]{resources/4g4.png}
+      \caption{System monitor: Process}
+    \end{figure}
+    en este caso, el mensaje es que el proceso no existe porque fue eliminado anteriormente con "SIGTERM"
 
 %----------------------------------------------------------------------------------------
 
