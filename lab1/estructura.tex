@@ -25,6 +25,13 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{booktabs}
+
+\usepackage{multicol}
+
+\usepackage{multirow}
+
 \usepackage{amsmath,amsfonts,stmaryrd,amssymb} % Math packages
 
 \usepackage{enumerate} % Custom item numbers for enumerations
@@ -92,10 +99,31 @@
 	nobreak,
 }
 
+\mdfdefinestyle{commandline2}{
+	leftmargin=5pt,
+	rightmargin=5pt,
+	innerleftmargin=15pt,
+	middlelinecolor=black!50!white,
+	middlelinewidth=2pt,
+	frametitlerule=false,
+	backgroundcolor=black!5!white,
+	frametitle={Command Line},
+	frametitlefont={\normalfont\sffamily\color{white}\hspace{-1em}},
+	frametitlebackgroundcolor=black!50!white,
+	nobreak,
+}
 % Define a custom environment for command-line snapshots
 \newenvironment{commandline}{
 	\medskip
 	\begin{mdframed}[style=commandline]
+}{
+	\end{mdframed}
+	\medskip
+}
+
+\newenvironment{commandline22}{
+	\medskip
+	\begin{mdframed}[style=commandline2]
 }{
 	\end{mdframed}
 	\medskip
