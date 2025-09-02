@@ -69,8 +69,10 @@
 
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
-
-\usepackage{XCharter} % Use the XCharter fonts
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\baselineskip}{1.5cm}
+%\usepackage{XCharter} % Use the XCharter fonts
 
 %----------------------------------------------------------------------------------------
 %	COMMAND LINE ENVIRONMENT
@@ -95,7 +97,7 @@
 	backgroundcolor=black!5!white,
 	frametitle={Command Line},
 	frametitlefont={\normalfont\sffamily\color{white}\hspace{-1em}},
-	frametitlebackgroundcolor=black!50!white,
+	frametitlebackgroundcolor=black!80!white,
 	nobreak,
 }
 

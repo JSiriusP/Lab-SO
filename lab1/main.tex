@@ -16,13 +16,16 @@
 
 \title{\textbf{Laboratorio 1: }Administrador de Procesos --- Parte A\@: Procesos y Comunicación Entre Procesos}
 
-\author{
+\author{ \textbf{Integrantes: }
 Facundo Nicolás Farias Lozano,
 Juan Cruz Paez,
-Tomás Agustín Muñoz
+Tomás Agustín Muñoz.
 }
 
-\date{\footnotesize\textsuperscript{\textbf{1}}Sistemas Operativos\\ \textsuperscript{\textbf{2}}Universidad Nacional de San Luis\\ \textsuperscript{\textbf{3}}2025}
+\date{\textbf{Docentes: } 
+Mg. Cs. Molina Silvia, Dra. Natalia Miranda, Mg. Palacio Gabriela.
+  \\Sistemas Operativos\\ Universidad Nacional de San Luis\\2025
+  }
 
 %\date{Universidad Nacional de San Luis --- 2025}
 
@@ -54,15 +57,15 @@ En mi computadora tengo instalado un AMD Ryzen 5 5600X y cuenta con 12 procesado
 
 \subsection*{c- ¿Cuál es la capacidad de memoria disponible?}
 \noindent
-La memoria disponible es de \(15.5 GiB\).
+La memoria disponible es de 15.5 GiB.
 
 \subsection*{d- ¿Qué placa de video o gráfica posee?}
 \noindent
-La placa de vídeo es la GeForce GTX 1650 del fabricante NVIDIA.\@
+La placa de vídeo es la GeForce GTX 1650 del fabricante NVIDIA.
 
 \subsection*{e- ¿Cuál es la capacidad de disco que posee?}
 \noindent
-La capacidad de disco con la que cuenta la computadora es de 1007.7Gb.
+La capacidad de disco con la que cuenta la computadora es de 1007.7 GB.
 
 %----------------------------------------------------------------------------------------
 
@@ -80,7 +83,7 @@ La capacidad de disco con la que cuenta la computadora es de 1007.7Gb.
 Al abrir el \textit{monitor de sistema} podemos observar:
 
 \begin{itemize}
-    \item \textbf{Uso de la CPU:\@} Muestra un histograma del uso de los procesador en tiempo real.
+    \item \textbf{Uso de la CPU:} Muestra un histograma del uso de los procesador en tiempo real.
     \item \textbf{Uso de la memoria y espacio intercambiado (swap)\footnote{Herramienta de gestión de memoria que actua cuando la memoria RAM física se llena}: }
     Muestra de forma gráfica el uso de la memoria RAM y el espacio de intercambio.
     \item \textbf{Actividad de Red: } Muestra de manera gráfica la transmisión de  datos de red.
@@ -161,16 +164,11 @@ terminal/consola, luego responda observando la pestaña “Procesos” del Monit
 \end{table}%
  % chktex 44
  
- \begin{info}[Bash]
-    Cuando se detiene se congela la terminal, Matarlo cierra la pestaña y cuando se finaliza no ocurre nada.
- \end{info}
-\begin{info}[Brave]
+ \begin{warn}[]
     Cuando se detiene un subproceso, la imagen de la pestaña queda en negro. Matarlo solo hace que la pestaña large una excepción
     y finalizarlo hace que la pestaña se cierre.
- \end{info}
- \begin{info}[Xed]
-    Cuando se detiene se congela igual que la terminal, matarlo y finalizarlo cierran el editor de texto.
- \end{info}
+ \end{warn}
+
  % INSERTAR CHAMUYO DE QUE PASA AL INTENTAR KILLEAR UN PROCESO
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.25)  2 SEP 2025 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.25)  2 SEP 2025 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -838,7 +838,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <resources/ej2f.png, id=26, 835.12pt x 252.945pt>
 File: resources/ej2f.png Graphic file (type png)
 <use resources/ej2f.png>
-Package pdftex.def Info: resources/ej2f.png  used on input line 181.
+Package pdftex.def Info: resources/ej2f.png  used on input line 186.
 (pdftex.def)             Requested size: 483.69687pt x 146.50749pt.
 
 
@@ -850,7 +850,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <resources/3b.png, id=30, 61.22874pt x 90.3375pt>
 File: resources/3b.png Graphic file (type png)
 <use resources/3b.png>
-Package pdftex.def Info: resources/3b.png  used on input line 227.
+Package pdftex.def Info: resources/3b.png  used on input line 232.
 (pdftex.def)             Requested size: 48.37263pt x 71.37134pt.
 
 
@@ -858,22 +858,22 @@ Package pdftex.def Info: resources/3b.png  used on input line 227.
 <resources/3dEst.png, id=34, 604.2575pt x 349.305pt>
 File: resources/3dEst.png Graphic file (type png)
 <use resources/3dEst.png>
-Package pdftex.def Info: resources/3dEst.png  used on input line 265.
+Package pdftex.def Info: resources/3dEst.png  used on input line 270.
 (pdftex.def)             Requested size: 338.58632pt x 195.72672pt.
 <resources/3dComp.png, id=35, 750.805pt x 256.96pt>
 File: resources/3dComp.png Graphic file (type png)
 <use resources/3dComp.png>
-Package pdftex.def Info: resources/3dComp.png  used on input line 275.
+Package pdftex.def Info: resources/3dComp.png  used on input line 280.
 (pdftex.def)             Requested size: 338.58632pt x 115.88187pt.
 <resources/3dGra1.png, id=36, 691.58376pt x 465.74pt>
 File: resources/3dGra1.png Graphic file (type png)
 <use resources/3dGra1.png>
-Package pdftex.def Info: resources/3dGra1.png  used on input line 287.
+Package pdftex.def Info: resources/3dGra1.png  used on input line 292.
 (pdftex.def)             Requested size: 237.01411pt x 159.61447pt.
 <resources/3dGra2.png, id=37, 770.88pt x 518.93875pt>
 File: resources/3dGra2.png Graphic file (type png)
 <use resources/3dGra2.png>
-Package pdftex.def Info: resources/3dGra2.png  used on input line 289.
+Package pdftex.def Info: resources/3dGra2.png  used on input line 294.
 (pdftex.def)             Requested size: 237.01411pt x 159.54698pt.
 
 
@@ -886,7 +886,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [7 <./resources/3dGra1.png> <./resources/3dGra2.png>]
 
 [8]
-Overfull \hbox (22.59677pt too wide) in paragraph at lines 466--466
+Overfull \hbox (22.59677pt too wide) in paragraph at lines 471--471
 []    \T1/cmtt/m/n/7 1003  avahi      20 0    6616  3968  3840 S 0.0  0.1   0:00.20 avahi-daemon: running[tomas-HP-245-G7-Notebook-PC.local][] 
  []
 
@@ -895,13 +895,13 @@ Overfull \hbox (22.59677pt too wide) in paragraph at lines 466--466
 [9]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family phv in TS1 encoding.
-            Default family used instead on input line 508.
+            Default family used instead on input line 513.
 
 
 [10]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family phv in TS1 encoding.
-            Default family used instead on input line 511.
+            Default family used instead on input line 516.
 
 
 [11] (main.aux
@@ -914,15 +914,15 @@ L3 programming layer <2025-07-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 20661 strings out of 468134
- 395353 string characters out of 5430740
- 831166 words of memory out of 5000000
- 48870 multiletter control sequences out of 15000+600000
+ 20650 strings out of 468134
+ 395213 string characters out of 5430740
+ 831260 words of memory out of 5000000
+ 48859 multiletter control sequences out of 15000+600000
  675669 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  127i,10n,132p,642b,946s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\facun\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1000.pk> <C:\Users\facun\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi525\ectt0800.pk> <C:\Users\facun\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0800.pk> <C:\Users\facun\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (11 pages, 527257 bytes).
+Output written on main.pdf (11 pages, 528021 bytes).
 PDF statistics:
  301 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

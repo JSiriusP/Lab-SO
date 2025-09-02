@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756837416.81378 "c:/Users/facun/Documents/Facultad/3er Año/2do Cuatri/Sistemas Operativos/Unidades/Laboratorios/L1/Lab-SO/lab1/main.tex" "main.pdf" "main" 1756837418.12044 0
+["pdflatex"] 1756837034.22618 "c:/Users/facun/Documents/Facultad/3er Año/2do Cuatri/Sistemas Operativos/Unidades/Laboratorios/L1/Lab-SO/lab1/main.tex" "main.pdf" "main" 1756837035.54286 0
   "C:/Users/facun/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756836321 150038 a43c8835ccb756caf388258e4e2bdf93 ""
   "C:/Users/facun/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi525/ectt0800.pk" 1756835705 13416 16910b84c0fdfbb0c31cddd3df6f68df ""
   "C:/Users/facun/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0800.pk" 1756835706 15192 86e8ab915c208cd3a1c2e147d8405f29 ""
@@ -41,6 +41,8 @@
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136864148 35941 adef23a721dd8354a4a2bf4434f1c484 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb" 1136864148 44648 23115b2a545ebfe2c526c3ca99db8b95 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb" 1136864148 48169 065450055814ce4dfc30f7922d24ab30 ""
@@ -182,10 +184,10 @@
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1750428951 2269 2de6c7a5fd634dfef00a960544463a38 ""
   "C:/Users/facun/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1750428951 20785 198a9cb2e04238d92c320d0d9edbd76a ""
-  "c:/Users/facun/Documents/Facultad/3er Año/2do Cuatri/Sistemas Operativos/Unidades/Laboratorios/L1/Lab-SO/lab1/main.tex" 1756837416 26431 84f34df16c22e1418ffda01726e7e30a ""
+  "c:/Users/facun/Documents/Facultad/3er Año/2do Cuatri/Sistemas Operativos/Unidades/Laboratorios/L1/Lab-SO/lab1/main.tex" 1756836154 26725 5153d9f715fc1ff9d12f052eaf7434e2 ""
   "estructura.tex" 1756837033 7759 8c573a8305c4d9312070b76d0bfdf0ac ""
-  "main.aux" 1756837417 2247 b29700e72fd90b1afd585d67c8510a5c "pdflatex"
-  "main.tex" 1756837416 26431 84f34df16c22e1418ffda01726e7e30a ""
+  "main.aux" 1756837035 2335 57a9c65fc616174d96d016435cd2ade4 "pdflatex"
+  "main.tex" 1756836154 26725 5153d9f715fc1ff9d12f052eaf7434e2 ""
   "resources/2.png" 1756761840 71410 d28dc43e9592a57fb4cb0d89fb1bcd27 ""
   "resources/3b.png" 1756835619 2554 17804731e2cecb58aa37124139f33521 ""
   "resources/3dComp.png" 1756835619 38069 f2f1d08870cb31b27359756265bdac9d ""
