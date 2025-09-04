@@ -16,6 +16,7 @@
 
 \title{\textbf{Laboratorio 1: }Administrador de Procesos --- Parte A\@: Procesos y Comunicación Entre Procesos}
 
+
 \author{ \textbf{Integrantes: }
 Facundo Nicolás Farias Lozano,
 Juan Cruz Paez,
@@ -23,8 +24,13 @@ Tomás Agustín Muñoz.
 }
 
 \date{\textbf{Docentes: } 
-Mg. Cs. Molina Silvia, Dra. Natalia Miranda, Mg. Palacio Gabriela.
-  \\Sistemas Operativos\\ Universidad Nacional de San Luis\\2025
+Mg. Cs. Molina Silvia, Dra. Natalia Miranda, Mg. Palacio Gabriela.\\
+  \vspace{0.3cm}
+  Sistemas Operativos\\ 
+  \vspace{0.2cm}
+  Universidad Nacional de San Luis\\
+  \vspace{0.2cm}
+  2025
   }
 
 %\date{Universidad Nacional de San Luis --- 2025}
@@ -39,7 +45,7 @@ Mg. Cs. Molina Silvia, Dra. Natalia Miranda, Mg. Palacio Gabriela.
 %	RESOLUCIÓN
 %----------------------------------------------------------------------------------------
 
-\section*{Ejercicio 1:}
+\section*{Ejercicio 1: Acerca de Linux}
 
 \begin{figure}[h]
   \centering
@@ -49,27 +55,28 @@ Mg. Cs. Molina Silvia, Dra. Natalia Miranda, Mg. Palacio Gabriela.
 
 \subsection*{a- ¿Qué Sistema Operativo tiene instalado? ¿Qué distribución? ¿Qué versión?}
 \noindent
-El sistema operativo que tengo instalado es Linux Mint 22.1 Cinnamon y es la version 6.4.8
+El sistema operativo que se encuentra instalado es \textit{Linux Mint 22.1 Cinnamon} y es la version \textit{6.4.8}
 
 \subsection*{b- ¿Cuántos procesadores posee su sistema de computadora? ¿Cuáles son sus características?}
 \noindent
-En mi computadora tengo instalado un AMD Ryzen 5 5600X y cuenta con 12 procesadores (Hilos log)
+El sistema cuenta con un procesador \textit{AMD Ryzen 5 5600X}, el cual posee \textit{6 núcleos físicos y 12 hilos 
+lógicos}, arquitectura \textit{Zen 3} y frecuencia base de \textit{3.7 GHz} hasta \textit{4.6 Ghz}
 
 \subsection*{c- ¿Cuál es la capacidad de memoria disponible?}
 \noindent
-La memoria disponible es de 15.5 GiB.
+La memoria disponible es de \textit{15.5 GiB}.
 
 \subsection*{d- ¿Qué placa de video o gráfica posee?}
 \noindent
-La placa de vídeo es la GeForce GTX 1650 del fabricante NVIDIA.
+La placa de vídeo es la \textit{GeForce GTX 1650 NVIDIA}.\@
 
 \subsection*{e- ¿Cuál es la capacidad de disco que posee?}
 \noindent
-La capacidad de disco con la que cuenta la computadora es de 1007.7 GB.
+La capacidad de disco con la que se cuenta es de \textit{1007.7 GB}.\@
 
 %----------------------------------------------------------------------------------------
 
-\section*{Ejercicio 2:}
+\section*{Ejercicio 2: Monitor de sistema}
 
 \begin{figure}[h]
   \centering
@@ -116,22 +123,24 @@ En dicha pestaña se muestra informacion en tiempo real de todos los procesos ac
   \item \textbf{Prioridad:} Indica que priorida le da el sistema al proceso frente a otros.
   \item \textbf{Estado:} Indica si el proceso esta durmiendo, ejecutandose,etc
 \end{itemize}
-  
+
+\noindent
+Además, desde la pestaña procesos se agrega la posibilidad de mostrar información util como \textbf{CPU Time} y \textbf{Waiting Channel}.
 \subsection*{c- ¿Qué operaciones se permite hacer respecto a los procesos?}
 
 \noindent
 Las operaciones que se permiten hacer sobre un proceso son:
 \begin{itemize}
-  \item \textit{Open Files}
-  \item \textit{Change Priority}
-  \item \textit{Set Affinity}
-  \item \textit{Stop}
-  \item \textit{continue}
-  \item \textit{Terminate}
-  \item \textit{Memory Maps}
-  \item \textit{Kill}
-  \item \textit{End Procesos}
-  \item \textit{Show Process Properties}
+  \item \textbf{Open Files}
+  \item \textbf{Change Priority}
+  \item \textbf{Set Affinity}
+  \item \textbf{Stop}
+  \item \textbf{continue}
+  \item \textbf{Terminate}
+  \item \textbf{Memory Maps}
+  \item \textbf{Kill}
+  \item \textbf{End Procesos}
+  \item \textbf{Show Process Properties}
 \end{itemize}
 
 \subsection*{d- ¿Cómo se muestran las prioridades de un proceso?}
@@ -148,7 +157,7 @@ terminal/consola, luego responda observando la pestaña “Procesos” del Monit
 % chktex 44
 \begin{table}[htbp]
   \centering
-  \caption{Información del monitor del sistema}
+  % \caption{Información del monitor del sistema} No me convence como queda :(
     \begin{tabular}{|lrlll|}
     \toprule
     \rowcolor[rgb]{ .357,  .608,  .835} \textcolor[rgb]{ 1,  1,  1}{\textbf{Nombre Proceso}} & \multicolumn{1}{l}{\textcolor[rgb]{ 1,  1,  1}{\textbf{PID}}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Estado}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Ejecutando}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Tipo Cola}} \\
@@ -165,11 +174,11 @@ terminal/consola, luego responda observando la pestaña “Procesos” del Monit
  % chktex 44
  
  \begin{warn}[]
-    Cuando se detiene un subproceso, la imagen de la pestaña queda en negro. Matarlo solo hace que la pestaña large una excepción
-    y finalizarlo hace que la pestaña se cierre.
+    \noindent
+    Detener un proceso; este quedará en memoria, pero no se puede ejecutar hasta que se reanude 
+    (se cuelga). Finalizarlo hará que el proceso finalice, aunque existen casos en que el proceso 
+    puede ignorar la señal. Matarlo lo finaliza sin excepciones.
  \end{warn}
-
- % INSERTAR CHAMUYO DE QUE PASA AL INTENTAR KILLEAR UN PROCESO
 
 
 \subsection*{f- Desde la pestaña “Procesos”, ordene los procesos por número de proceso, donde se muestren los
@@ -189,7 +198,7 @@ prioridad, memoria real):}
     \toprule
     \rowcolor[rgb]{ .357,  .608,  .835} \multicolumn{1}{|l}{\textcolor[rgb]{ 1,  1,  1}{\textbf{Proceso}}} & \multicolumn{1}{l}{\textcolor[rgb]{ 1,  1,  1}{\textbf{PID}}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Nombre Proceso}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Usuario}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Propietario}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Estado}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Prioridad}} & \textcolor[rgb]{ 1,  1,  1}{\textbf{Memoria}} \\
     \midrule
-    \rowcolor[rgb]{ .867,  .922,  .969} 1     & 1431  & agetty & root  & -     & Sleeping & Normal & 131,1 kB \\
+    \rowcolor[rgb]{ .867,  .922,  .969} 1     & 1431  & agetty & root  & $-$     & Sleeping & Normal & 131,1 kB \\
     \midrule
     3     & 1647  & systemd & root  & siruis & Sleeping & Normal & 2,8 MB \\
     \midrule
@@ -205,7 +214,7 @@ prioridad, memoria real):}
 
 %----------------------------------------------------------------------------------------
 
-\section*{Ejercicio 3}
+\section*{Ejercicio 3: Simulador de Planificador de procesos}
 
 \subsection*{a- ¿Qué partes del diagrama del ciclo de vida de un proceso se pueden visualizar en la ventana
 principal?}
@@ -214,11 +223,11 @@ principal?}
 En el diagrama de ejecución podemos observar los estados del ciclo de vida
 
 \begin{itemize}
-  \item \textit{New}
-  \item \textit{Ready}
-  \item \textit{Running}
-  \item \textit{Bloqued}
-  \item \textit{Exit}
+  \item \textbf{New}
+  \item \textbf{Ready}
+  \item \textbf{Running}
+  \item \textbf{Bloqued}
+  \item \textbf{Exit}
 \end{itemize}
 
 \subsection*{b- ¿Qué información de los procesos puede ser visualizada? Ejemplifique.}
@@ -257,9 +266,10 @@ La información que se puede configurar para los procesos incluye:
 
 \noindent
 Al acceder a la pestaña Resultados, encontramos tres secciones distintas que proporcionan información valiosa:
-\textbf{Estadisticas}
-Permite consultar información detallada de la simulación. Incluye datos específicos de cada proceso, como instante de llegada,
+\textit{Estadisticas}
+permite consultar información detallada de la simulación. Incluye datos específicos de cada proceso, como instante de llegada,
 prioridad, número de ráfagas, tiempo de espera, entre otros. Además, muestra estadísticas globales propias de toda la simulación.
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.7\textwidth]{resources/3dEst.png}
@@ -501,14 +511,14 @@ Listamos todas las señales posibles con el comando \textit{kill-l}.
 \noindent
 Cada número o nombre representa una señal que podés enviar a un proceso.
 
-\noindent
+\medbreak\noindent
 Las más usadas para terminar procesos son:
 
 \begin{itemize}
-  \item \textit{SIGTERM (15)} → Finalización ordenada: consiste en solicitar al proceso que termine su ejecución, 
+  \item \textbf{SIGTERM} \textit{(15)} → Finalización ordenada: consiste en solicitar al proceso que termine su ejecución, 
   permitiéndole cerrar archivos, guardar datos, liberar memoria y limpiar recursos antes de finalizar. Sin embargo, el proceso 
   puede optar por ignorar la señal y no terminar con su ejecución.
-  \item \textit{SIGKILL (9)} → Finalización forzada: se solicita al proceso que termine de manera inmediata y obligatoria,
+  \item \textbf{SIGKILL} \textit{(9)} → Finalización forzada: se solicita al proceso que termine de manera inmediata y obligatoria,
   sin darle la posibilidad de cerrar archivos abiertos, liberar recursos o guardar datos. En este caso, el proceso no puede 
   ignorar la señal y debe finalizar.
 \end{itemize}
