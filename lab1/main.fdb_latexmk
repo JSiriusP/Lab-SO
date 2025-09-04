@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1757011290.37493 "/home/sirius/Documents/githubProyects/Lab-SO/lab1/main.tex" "main.pdf" "main" 1757011291.27341 0
+["pdflatex"] 1757011617.5152 "/home/sirius/Documents/githubProyects/Lab-SO/lab1/main.tex" "main.pdf" "main" 1757011618.41768 0
   "/etc/texmf/web2c/texmf.cnf" 1754741174.1425 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sirius/Documents/githubProyects/Lab-SO/lab1/main.tex" 1757011290.14721 26394 72a1f410f0d292ea285b092332b8d23e ""
+  "/home/sirius/Documents/githubProyects/Lab-SO/lab1/main.tex" 1757011617.31017 26493 c9b07197fbd65ec9ede239332ebb8c1a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -190,8 +190,8 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1754741186.70449 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1754741261 8212577 bb174b9eb647b12daeb93f7a9a9b0782 ""
   "estructura.tex" 1757007840.94958 7631 8edffdd31bf0e3d95972ada0bee46ad1 ""
-  "main.aux" 1757011291.20021 2055 67f042bb95b5cb943a5ef20ad184e81d "pdflatex"
-  "main.tex" 1757011290.14721 26394 72a1f410f0d292ea285b092332b8d23e ""
+  "main.aux" 1757011618.34117 2055 309c1b1f38d6ff2a507fae4f68b9f1ad "pdflatex"
+  "main.tex" 1757011617.31017 26493 c9b07197fbd65ec9ede239332ebb8c1a ""
   "resources/2.png" 1756735445.49675 71410 1fa2558935910ed5e81a424b0157c95f ""
   "resources/3b.png" 1756780076.70494 2554 1a75a6ef75ddeed2689f1ba5fb1145bc ""
   "resources/3dComp.png" 1756780076.70594 38069 d56d3e3dc1652585ba7a29112d24844c ""

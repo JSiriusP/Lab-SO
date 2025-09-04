@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  4 SEP 2025 15:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.9)  4 SEP 2025 15:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,13 +819,17 @@ File: resources/ej2f.png Graphic file (type png)
 <use resources/ej2f.png>
 Package pdftex.def Info: resources/ej2f.png  used on input line 190.
 (pdftex.def)             Requested size: 483.69687pt x 146.50749pt.
- [4 <./resources/ej2f.png>]
-<resources/3b.png, id=31, 61.22874pt x 90.3375pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]
+<resources/3b.png, id=32, 61.22874pt x 90.3375pt>
 File: resources/3b.png Graphic file (type png)
 <use resources/3b.png>
 Package pdftex.def Info: resources/3b.png  used on input line 236.
 (pdftex.def)             Requested size: 48.37263pt x 71.37134pt.
- [5 <./resources/3b.png>]
+ [5 <./resources/ej2f.png> <./resources/3b.png>]
 <resources/3dEst.png, id=36, 604.2575pt x 349.305pt>
 File: resources/3dEst.png Graphic file (type png)
 <use resources/3dEst.png>
@@ -891,7 +895,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  127i,10n,132p,562b,952s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (11 pages, 552029 bytes).
+Output written on main.pdf (11 pages, 552000 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

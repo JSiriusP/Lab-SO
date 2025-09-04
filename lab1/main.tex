@@ -175,9 +175,9 @@ terminal/consola, luego responda observando la pestaña “Procesos” del Monit
  
  \begin{warn}[]
     \noindent
-    Detener un proceso; este quedará en memoria, pero no se puede ejecutar hasta que se reanude 
-    (se cuelga). Finalizarlo hará que el proceso finalice, aunque existen casos en que el proceso 
-    puede ignorar la señal. Matarlo lo finaliza sin excepciones.
+    Al detener un proceso, este permanece en memoria pero suspendido, sin posibilidad de ejecutarse hasta que se lo 
+    reanude. Al finalizarlo, se envía una señal para que concluya de manera ordenada, aunque en algunos casos el
+    proceso puede ignorar dicha señal. En cambio, al matarlo se fuerza su terminación inmediata, sin posibilidad de ser evitada.
  \end{warn}
 
 
